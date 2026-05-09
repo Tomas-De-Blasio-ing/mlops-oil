@@ -1,0 +1,86 @@
+artifact_path: mlflow-artifacts:/1/models/m-e41e924f828c47dcba375f91d15bd403/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.11.1
+model_id: m-e41e924f828c47dcba375f91d15bd403
+model_size_bytes: 62189
+model_uuid: m-e41e924f828c47dcba375f91d15bd403
+prompts: null
+run_id: 199930953371432183eea3285106c628
+signature:
+  inputs: '[{"type": "double", "name": "ESTADO-DHSV_mean", "required": false}, {"type":
+    "double", "name": "ESTADO-DHSV_std", "required": false}, {"type": "double", "name":
+    "ESTADO-DHSV_min", "required": false}, {"type": "double", "name": "ESTADO-DHSV_max",
+    "required": false}, {"type": "double", "name": "ESTADO-M1_mean", "required": false},
+    {"type": "double", "name": "ESTADO-M1_std", "required": false}, {"type": "double",
+    "name": "ESTADO-M1_min", "required": false}, {"type": "double", "name": "ESTADO-M1_max",
+    "required": false}, {"type": "double", "name": "ESTADO-M2_mean", "required": false},
+    {"type": "double", "name": "ESTADO-M2_std", "required": false}, {"type": "double",
+    "name": "ESTADO-M2_min", "required": false}, {"type": "double", "name": "ESTADO-M2_max",
+    "required": false}, {"type": "double", "name": "ESTADO-PXO_mean", "required":
+    false}, {"type": "double", "name": "ESTADO-PXO_std", "required": false}, {"type":
+    "double", "name": "ESTADO-PXO_min", "required": false}, {"type": "double", "name":
+    "ESTADO-PXO_max", "required": false}, {"type": "double", "name": "ESTADO-SDV-GL_mean",
+    "required": false}, {"type": "double", "name": "ESTADO-SDV-GL_std", "required":
+    false}, {"type": "double", "name": "ESTADO-SDV-GL_min", "required": false}, {"type":
+    "double", "name": "ESTADO-SDV-GL_max", "required": false}, {"type": "double",
+    "name": "ESTADO-SDV-P_mean", "required": false}, {"type": "double", "name": "ESTADO-SDV-P_std",
+    "required": false}, {"type": "double", "name": "ESTADO-SDV-P_min", "required":
+    false}, {"type": "double", "name": "ESTADO-SDV-P_max", "required": false}, {"type":
+    "double", "name": "ESTADO-W1_mean", "required": false}, {"type": "double", "name":
+    "ESTADO-W1_std", "required": false}, {"type": "double", "name": "ESTADO-W1_min",
+    "required": false}, {"type": "double", "name": "ESTADO-W1_max", "required": false},
+    {"type": "double", "name": "ESTADO-W2_mean", "required": false}, {"type": "double",
+    "name": "ESTADO-W2_std", "required": false}, {"type": "double", "name": "ESTADO-W2_min",
+    "required": false}, {"type": "double", "name": "ESTADO-W2_max", "required": false},
+    {"type": "double", "name": "ESTADO-XO_mean", "required": false}, {"type": "double",
+    "name": "ESTADO-XO_std", "required": false}, {"type": "double", "name": "ESTADO-XO_min",
+    "required": false}, {"type": "double", "name": "ESTADO-XO_max", "required": false},
+    {"type": "double", "name": "P-ANULAR_mean", "required": false}, {"type": "double",
+    "name": "P-ANULAR_std", "required": false}, {"type": "double", "name": "P-ANULAR_min",
+    "required": false}, {"type": "double", "name": "P-ANULAR_max", "required": false},
+    {"type": "double", "name": "P-JUS-CKGL_mean", "required": false}, {"type": "double",
+    "name": "P-JUS-CKGL_std", "required": false}, {"type": "double", "name": "P-JUS-CKGL_min",
+    "required": false}, {"type": "double", "name": "P-JUS-CKGL_max", "required": false},
+    {"type": "double", "name": "P-MON-CKP_mean", "required": true}, {"type": "double",
+    "name": "P-MON-CKP_std", "required": true}, {"type": "double", "name": "P-MON-CKP_min",
+    "required": true}, {"type": "double", "name": "P-MON-CKP_max", "required": true},
+    {"type": "double", "name": "P-PDG_mean", "required": true}, {"type": "double",
+    "name": "P-PDG_std", "required": true}, {"type": "double", "name": "P-PDG_min",
+    "required": true}, {"type": "double", "name": "P-PDG_max", "required": true},
+    {"type": "double", "name": "P-TPT_mean", "required": true}, {"type": "double",
+    "name": "P-TPT_std", "required": true}, {"type": "double", "name": "P-TPT_min",
+    "required": true}, {"type": "double", "name": "P-TPT_max", "required": true},
+    {"type": "double", "name": "QGL_mean", "required": false}, {"type": "double",
+    "name": "QGL_std", "required": false}, {"type": "double", "name": "QGL_min", "required":
+    false}, {"type": "double", "name": "QGL_max", "required": false}, {"type": "double",
+    "name": "T-JUS-CKP_mean", "required": true}, {"type": "double", "name": "T-JUS-CKP_std",
+    "required": true}, {"type": "double", "name": "T-JUS-CKP_min", "required": true},
+    {"type": "double", "name": "T-JUS-CKP_max", "required": true}, {"type": "double",
+    "name": "T-PDG_mean", "required": false}, {"type": "double", "name": "T-PDG_std",
+    "required": false}, {"type": "double", "name": "T-PDG_min", "required": false},
+    {"type": "double", "name": "T-PDG_max", "required": false}, {"type": "double",
+    "name": "T-TPT_mean", "required": true}, {"type": "double", "name": "T-TPT_std",
+    "required": true}, {"type": "double", "name": "T-TPT_min", "required": true},
+    {"type": "double", "name": "T-TPT_max", "required": true}, {"type": "double",
+    "name": "state_mean", "required": true}, {"type": "double", "name": "state_std",
+    "required": true}, {"type": "integer", "name": "state_min", "required": true},
+    {"type": "integer", "name": "state_max", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-05-06 21:20:04.147995'
